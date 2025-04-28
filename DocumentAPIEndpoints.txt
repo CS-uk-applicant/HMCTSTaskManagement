@@ -1,0 +1,76 @@
+Task Management System - API Endpoints
+Just noting down all the endpoints made for this small Razor Pages project. This includes creating tasks, viewing, updating, deleting them etc.
+
+Endpoints:
+1. Home page - List of Tasks
+URL: /
+
+Method: GET
+
+Purpose: Shows all the tasks that have been added so far.
+
+Params: 
+None
+
+2. Create Task Page (form)
+URL: /CreateTask
+
+Method: GET
+
+Purpose: Displays a form where user can fill title, description, status and due date.
+
+3. Submit New Task
+URL: /CreateTask
+
+Method: POST
+
+Purpose: Saves the new task into the database (in-memory db in my case).
+
+Fields:
+
+Required:
+Title
+Status
+DueDateTime
+
+Optional:
+Description
+
+4. View a Task
+URL: /ViewTask/{id}
+
+Method: GET
+
+Purpose: Open a detailed view for a single task by id.
+
+Params:
+id (int)
+
+5. Update Task
+URL: /UpdateTask/{id}
+
+Method(s):
+GET: Loads the form with existing data in db
+POST: Saves the updated task to db
+
+Params:
+id(int)
+
+6. Delete a Task
+URL: id={id}&handler=Delete
+
+Method: POST
+
+Purpose: Deletes the task based on its id.
+
+Params:
+id(int)
+
+Other Notes:
+Forms use simple validation on required fields like Title and DueDateTime.
+Deleting asks for a confirmation popup.
+Using InMemory DB for now so everything resets when the app restarts.
+Some error handling is there (like if a task id doesn’t exist when you try to edit or delete).
+Maybe can add logging later if I get time (haven't added it yet).
+No API authentication/security stuff as it’s just a demo.
+
