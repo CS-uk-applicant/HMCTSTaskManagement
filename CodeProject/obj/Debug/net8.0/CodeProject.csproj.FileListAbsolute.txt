@@ -94,7 +94,6 @@ C:\Users\mayan\source\repos\HMCTSTaskManagement\CodeProject\obj\Debug\net8.0\sta
 C:\Users\mayan\source\repos\HMCTSTaskManagement\CodeProject\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\mayan\source\repos\HMCTSTaskManagement\CodeProject\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\mayan\source\repos\HMCTSTaskManagement\CodeProject\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\mayan\source\repos\HMCTSTaskManagement\CodeProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\mayan\source\repos\HMCTSTaskManagement\CodeProject\obj\Debug\net8.0\CodeProj.525B15C3.Up2Date
 C:\Users\mayan\source\repos\HMCTSTaskManagement\CodeProject\obj\Debug\net8.0\CodeProject.dll
 C:\Users\mayan\source\repos\HMCTSTaskManagement\CodeProject\obj\Debug\net8.0\refint\CodeProject.dll

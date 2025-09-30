@@ -27,7 +27,7 @@ Requirement: .NET SDK (8.0 is the recommended version)
 ```bash
 git clone https://github.com/CS-uk-applicant/HMCTSTaskManagement
 ```
-2. Open the project in Visual Studio:
+2. Open the project in Visual Studio: Go to 'tools' -> Command line -> Developer command prompt
 
 3. Restore NuGet packages:
 
@@ -35,11 +35,16 @@ git clone https://github.com/CS-uk-applicant/HMCTSTaskManagement
 dotnet restore
 ```
 4. Run the project:
-
+Navigate into the main project folder containing the '.csproj' file (It will be CodeProject in this case):
 ```bash
 dotnet run
 ```
+Then open your browser at the url shown in the console. The url can be seen in front of something like 'Now listening on'.
+
+Important Note: Running `dotnet run` from the terminal starts the server but does not open a browser automatically. To launch the project in a browser, either copy the URL from the console output or run the project from Visual Studio using IIS Express.
 This should run the project.
+
+Alternatively, you can also right click on the folder 'CodeProject', click on 'set as startup project'. In the dropdown below the top menu bar, you will see options like http/htts/IIS Express etc. Select IIS Express and click on 'play' icon, this will run the project on your browser.
 
 API Endpoints:
 1. Home page - List of Tasks
