@@ -48,5 +48,5 @@ Other Notes:
 - Some error handling is there (like if a task id doesn’t exist when you try to edit or delete).
 - Currently assuming that due date/time is changeable by the user. Need to think if there might be a need to keep track of the changes to this field? Otherwise, user may be able to update it as per their wishes and deadlines may keep extending?
 - Status values are considered as New, Pending, In Progress and Completed. Currently there's no logic for the user being able to input only one of these 4 values (except a dropdown on front end, but nothing on back end)
-
 - Improvements could be: Logging, Duplication checks at db level, enforcing valid values at back end
+- Security Considerations: Task IDs are visible in URLs (e.g., /ViewTask/{id}), which could allow access to other users’ tasks in a real system. Proper authorization checks would mitigate IDOR (Insecure Direct Object References). As this is a demo with an in-memory database, authentication/authorization is not implemented, but would be necessary in a production environment along with logging and input validation.
