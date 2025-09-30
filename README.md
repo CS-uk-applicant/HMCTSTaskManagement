@@ -88,6 +88,9 @@ Purpose: Deletes the task based on its id.
 Params:
 id(int)
 
+API Testing:
+This project was initially tested using Swagger UI to verify the CRUD endpoints. Swagger was enabled in development to check that the APIs for creating, viewing, updating, and deleting tasks worked as expected.
+For the final version, Swagger was commented out in Program.cs so that the Razor Pages frontend could be used directly.
 
 Running Tests:
 To run tests for the project, you'll need to use the test project (CodeProject.Tests).They can be run as following:
