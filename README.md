@@ -27,15 +27,17 @@ Requirement: .NET SDK (8.0 is the recommended version)
 ```bash
 git clone https://github.com/CS-uk-applicant/HMCTSTaskManagement
 ```
-2. Open the project in Visual Studio: Go to 'tools' -> Command line -> Developer command prompt
+2. Open the project in Visual Studio. Alternatively, use command prompt (Go to 'tools' -> Command line -> Developer command prompt)
 
 3. Restore NuGet packages:
 
 ```bash
 dotnet restore
 ```
+In .NET 8, this step is optional because dotnet build or dotnet run will automatically restore dependencies if needed.
+
 4. Run the project:
-Navigate into the main project folder containing the '.csproj' file (It will be CodeProject in this case):
+
 ```bash
 dotnet run
 ```
@@ -44,7 +46,7 @@ Then open your browser at the url shown in the console. The url can be seen in f
 Important Note: Running `dotnet run` from the terminal starts the server but does not open a browser automatically. To launch the project in a browser, either copy the URL from the console output or run the project from Visual Studio using IIS Express.
 This should run the project.
 
-Alternatively, you can also right click on the folder 'CodeProject', click on 'set as startup project'. In the dropdown below the top menu bar, you will see options like http/htts/IIS Express etc. Select IIS Express and click on 'play' icon, this will run the project on your browser.
+Alternatively, you can also right click on the folder 'CodeProject', click on 'set as startup project'. In the dropdown below the top menu bar, you will see options like http/https/IIS Express etc. Select IIS Express and click on 'play' icon, this will run the project on your browser.
 
 API Endpoints:
 1. Home page - List of Tasks
@@ -90,13 +92,11 @@ id(int)
 
 API Testing:
 This project was initially tested using Swagger UI to verify the CRUD endpoints. Swagger was enabled in development to check that the APIs for creating, viewing, updating, and deleting tasks worked as expected.
-For the final version, Swagger was commented out in Program.cs so that the Razor Pages frontend could be used directly.
+For the final version, Swagger was commented out in Program.cs so that the Razor Pages frontend could be used directly as the main interface.
 
 Running Tests:
 To run tests for the project, you'll need to use the test project (CodeProject.Tests).They can be run as following:
 1. First way is by using command line: dotnet test
 2. Second way is: Open test explorer from menu bar, click 'run all' for all the tests (or individual by clicking on them)
 
-Contributing:
-If you'd like to contribute to this project, feel free to fork the repository and create a pull request with your changes. 
-If you find any bugs or have suggestions, feel free to open an issue. Contributions are always welcome!
+
